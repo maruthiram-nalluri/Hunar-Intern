@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Maruthiram Nalluri</title>
+<link rel="stylesheet" href="task1.css">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>Maruthiram Nalluri</h1>
+<nav>
+<ul>
+<li><a href="#about" onclick="showSection('about')">About Me</a></li>
+<li><a href="#portfolio" onclick="showSection('portfolio')">Portfolio</a></li>
+<li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+<li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<h2>Welcome to my personal homepage.</h2>
+<img src="data:image/png;base64,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" alt="Default Image" id="default-image">
+<main>
+<div class="section" id="about">
+<div class="container">
+<h1>About Me</h1>
+<p>My name is Maruthiram Nalluri</p>
+<p>My father name is Srinivasarao Nalluri</p>
+<p>My mother name is Jayasree Nalluri</p>
+<p>I am from Ongole</p>
+<p>I am a STUDENT</p>
+<p>I am pursuing graduation at Qis college of Engineering and Technology|| CyberSecurity and Internt of things with block chain Technology</p>
+
+</div>
+</div>
+<div class="section" id="portfolio">
+<div class="container">
+<h1>Portfolio</h1>
+<p>I have done a internship of Python .</p>
+</div>
+</div>
+<div class="section" id="skills">
+<div class="container">
+<h1>Skills</h1>
+<h3>Qualifications:</h3>
+<p>I am studying III B.Tech in QIS College of Engineering and Technology, Ongole.</p>
+<p>I have completed my Intermediate in MSR Jr College,Chimakurthy.</p>
+<p>I have completed my schooling in Chimakurthy Public School, Chimakurthy.</p>
+<p>I have some basic knowledge of coding languages like HTML, CSS, JAVA, JS, PYTHON, C</p>
+<p>I learnt the coding languages and certified by known platforms like GreatLearning, LinkedIn Learning, Sololearn, etc.</p>
+</div>
+</div>
+<div class="section" id="contact">
+<div class="container">
+<h1>Contact</h1>
+<h2>Via</h2>
+<a href="https://www.linkedin.com/in/maruthiram-nalluri-418162291" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+<a href="https://github.com/maruthiram-nalluri" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+<a href="https://www.instagram.com/ramchowdary___?igsh=aWhsdzhwejFiMm05" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+<a href="https://wa.me/qr/FCD7MYU4VECWJ1" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+<a href="rampostbox0977@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+</div>
+</div>
+</main>
+<footer>
+<div class="container">
+<p>&copy; Maruthiram Nalluri. All rights reserved.</p>
+<p>Follow me on social media:</p>
+<a href="https://www.linkedin.com/in/maruthiram-nalluri-418162291" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+<a href="https://github.com/maruthiram-nalluri" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+<a href="https://www.instagram.com/ramchowdary___?igsh=aWhsdzhwejFiMm05" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+<a href="https://wa.me/qr/FCD7MYU4VECWJ1" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+<a href="rampostbox0977@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+</div>
+</footer>
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        const activeSection = document.getElementById(sectionId);
+        activeSection.style.display = 'block';
+
+        // Hide default image when a section is shown
+        document.getElementById('default-image').style.display = 'none';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // No section is shown by default
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
+    });
+</script>
+</body>
+</html>
